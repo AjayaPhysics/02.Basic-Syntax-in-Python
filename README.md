@@ -69,3 +69,95 @@ if True:
 | **With Statement**       | Simplifies resource management, like file handling.                                                                                     | ```python\nwith open('file.txt', 'r') as file:\n    content = file.read()\n``` |
 | **Generators**           | Functions that yield values lazily using `yield`.                                                                                       | ```python\ndef generator():\n    yield 1\n    yield 2\n```                  |
 | **Iterators**            | Objects that implement the `__iter__()` and `__next__()` methods for iteration.                                                          | ```python\nit = iter([1, 2, 3])\nprint(next(it))\n```                       |
+
+
+
+# Python Basic Syntax
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Concept</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Case Sensitivity</td>
+    <td>Python is case-sensitive, meaning <code>variable</code> and <code>Variable</code> are treated as two different identifiers.</td>
+    <td><code>name = "Alice"</code> vs <code>Name = "Bob"</code></td>
+  </tr>
+  <tr>
+    <td>Indentation</td>
+    <td>Python uses indentation to define code blocks. Indentation is mandatory and replaces braces used in other languages.</td>
+    <td><pre><code>if True:\n    print("Hello")</code></pre></td>
+  </tr>
+  <tr>
+    <td>Comments</td>
+    <td>Comments start with a <code>#</code> for single-line comments and triple quotes (<code>'''</code> or <code>"""</code>) for multi-line comments.</td>
+    <td><code># This is a comment</code></td>
+  </tr>
+  <tr>
+    <td>Variables</td>
+    <td>Variables are used to store data and do not require explicit declaration.</td>
+    <td><code>x = 10</code></td>
+  </tr>
+  <tr>
+    <td>Keywords</td>
+    <td>Reserved words in Python that cannot be used as variable names, like <code>if</code>, <code>else</code>, <code>while</code>.</td>
+    <td><code>if x > 5:</code></td>
+  </tr>
+  <tr>
+    <td>Print Statement</td>
+    <td>Used to display output to the console.</td>
+    <td><code>print("Hello, World!")</code></td>
+  </tr>
+  <tr>
+    <td>Input Statement</td>
+    <td>Used to take user input from the console.</td>
+    <td><code>name = input("Enter your name: ")</code></td>
+  </tr>
+  <tr>
+    <td>Dynamic Typing</td>
+    <td>Python is dynamically typed, meaning variable types are determined at runtime.</td>
+    <td><code>x = 5</code> (int), <code>x = "Hi"</code> (str)</td>
+  </tr>
+  <tr>
+    <td>Semicolons</td>
+    <td>Python does not require semicolons to terminate statements, though they can be used optionally.</td>
+    <td><code>print("Hello")</code></td>
+  </tr>
+  <tr>
+    <td>Control Structures</td>
+    <td>Python uses <code>if</code>, <code>elif</code>, and <code>else</code> for conditional execution, and loops like <code>for</code> and <code>while</code> for repeated execution.</td>
+    <td><pre><code>if x > 0:\n    print("Positive")\nelse:\n    print("Non-positive")</code></pre></td>
+  </tr>
+  <tr>
+    <td>Function Syntax</td>
+    <td>Functions are defined using the <code>def</code> keyword, followed by the function name and parameters in parentheses.</td>
+    <td><pre><code>def greet(name):\n    return f"Hello, {name}!"</code></pre></td>
+  </tr>
+  <tr>
+    <td>Class Syntax</td>
+    <td>Classes are defined using the <code>class</code> keyword, with attributes and methods defined inside.</td>
+    <td><pre><code>class Dog:\n    def __init__(self, name):\n        self.name = name</code></pre></td>
+  </tr>
+  <tr>
+    <td>Importing Modules</td>
+    <td>Use the <code>import</code> keyword to include external modules or packages in your code.</td>
+    <td><pre><code>import math\nprint(math.sqrt(4))</code></pre></td>
+  </tr>
+  <tr>
+    <td>Error Handling</td>
+    <td>Use <code>try</code>, <code>except</code>, and <code>finally</code> to handle exceptions gracefully.</td>
+    <td><pre><code>try:\n    x = 10 / 0\nexcept ZeroDivisionError:\n    print("Cannot divide by zero")</code></pre></td>
+  </tr>
+  <tr>
+    <td>Lambda Functions</td>
+    <td>Anonymous functions can be created using the <code>lambda</code> keyword.</td>
+    <td><code>square = lambda x: x * x</code></td>
+  </tr>
+  <tr>
+    <td>List Comprehensions</td>
+    <td>A concise way to create lists based on existing lists.</td>
+    <td><code>[x * x for x in range(5)]</code></td>
+  </tr>
+</table>
